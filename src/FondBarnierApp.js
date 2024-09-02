@@ -21,7 +21,7 @@ const FondsBarnierApp = () => {
     const fetchSuggestions = useCallback(async (query) => {
         console.log(`Fetching suggestions for query: ${query}`);
         try {
-            const response = await fetch(`https://api.geoapify.com/v1/geocode/autocomplete?text=${query}&apiKey=${process.env.api_key}`)
+            const response = await fetch(`https://api.geoapify.com/v1/geocode/autocomplete?text=${query}&apiKey=${process.env.REACT_APP_API_KEY}`)
             const data = await response.json();
             console.log('Suggestions received:', data);
             setSuggestions(data.features || []);
