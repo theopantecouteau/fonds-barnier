@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  height: 100vw;
 }
 
 .App-logo {
@@ -36,3 +37,69 @@
     transform: rotate(360deg);
   }
 }
+
+.card {
+  max-width: 400px;
+  margin: auto;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+
+.card-header {
+  margin-bottom: 16px;
+}
+
+.input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+}
+
+.suggestions-list {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 8px;
+}
+
+.suggestion-item {
+  padding: 8px;
+  cursor: pointer;
+}
+
+.suggestion-item:hover {
+  background-color: #f0f0f0;
+}
+
+.btn {
+  padding: 8px;
+  background-color: #1d4ed8;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #2563eb;
+}
+
+.card-footer {
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid #ccc;
+}
+
+.alert {
+  padding: 16px;
+  background-color: #e0f7fa;
+  border-radius: 4px;
+}
+
+.alert-description {
+  margin: 0;
+}
+
